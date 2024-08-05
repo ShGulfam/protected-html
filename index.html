@@ -91,18 +91,20 @@
         }
     </style>
     <script>
-        function checkPassword(fileIndex) {
-            var password = document.getElementById("password" + fileIndex).value;
-            var correctPassword = "sentup@24";
-            var fileUrl = (fileIndex === 1) ? 
-                "https://drive.google.com/file/d/17XWdCB6khhRf0Z52t7fWtYK9WnUd0gJT/view?usp=drive_link" : 
-                "https://drive.google.com/file/d/1A2Wy5XKl2PW0Egb30R2NQS7JtREN5J3P/view?usp=sharing";
-                
-            if (password === correctPassword) {
-                window.location.href = fileUrl;
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var fileUrl;
+
+            if (password === "12th@24") {
+                fileUrl = "https://drive.google.com/file/d/17XWdCB6khhRf0Z52t7fWtYK9WnUd0gJT/view?usp=drive_link";
+            } else if (password === "11th@24") {
+                fileUrl = "https://drive.google.com/file/d/1A2Wy5XKl2PW0Egb30R2NQS7JtREN5J3P/view?usp=sharing";
             } else {
                 alert("Incorrect password. Please try again.");
+                return;
             }
+
+            window.location.href = fileUrl;
         }
     </script>
 </head>
@@ -116,15 +118,9 @@
         <p>Welcome to the Admissions and Examinations section of Govt. Higher Secondary School (HSS) Shangus, Anantnag. Here, you can access important documents and information related to the school's admissions process and examination schedules.</p>
         
         <div class="password-container">
-            <h2>Enter Password to Access File 1</h2>
-            <input type="password" id="password1" placeholder="Enter password">
-            <button onclick="checkPassword(1)">Submit</button>
-        </div>
-        
-        <div class="password-container">
-            <h2>Enter Password to Access File 2</h2>
-            <input type="password" id="password2" placeholder="Enter password">
-            <button onclick="checkPassword(2)">Submit</button>
+            <h2>Enter Password to Access File</h2>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="checkPassword()">Submit</button>
         </div>
     </div>
     <footer>
