@@ -5,89 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Govt. HSS Shangus, Anantnag - Admissions & Examinations</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f3f4f6;
             color: #333;
         }
+
+        /* Header Styles */
         header {
-            background-color: #008bff;
+            background: linear-gradient(90deg, #007bff, #0056b3);
             color: #fff;
             padding: 20px 0;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Container Styles */
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
         }
+
         .school-name {
-            font-size: 36px;
+            font-size: 28px;
             font-weight: bold;
             color: #800000;
             margin-bottom: 20px;
         }
+
         .logo {
             margin-bottom: 20px;
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
-            border: 2px solid #007bff;
-            border-radius: 10px;
+            border: 3px solid #007bff;
+            border-radius: 12px;
         }
-        h1 {
-            text-align: center;
-            color: #007bff;
-            margin-bottom: 30px;
-        }
+
         p {
-            line-height: 1.6;
-            text-align: left;
-            margin-bottom: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            margin: 20px 0;
+            font-size: 1.1rem;
         }
+
+        /* Password Container */
         .password-container {
-            margin: 20px auto;
-            text-align: center;
-            padding: 20px;
+            margin: 30px auto;
+            padding: 25px;
             border-radius: 10px;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        .password-container h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
         .password-container input {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 12px;
+            width: 60%;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             margin-right: 10px;
+            transition: border-color 0.3s;
         }
+
+        .password-container input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
         .password-container button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 12px 25px;
+            font-size: 1rem;
             color: #fff;
             background-color: #007bff;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
         }
+
         .password-container button:hover {
             background-color: #0056b3;
+            transform: translateY(-2px);
         }
+
+        /* Footer Styles */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #007bff;
+            padding: 15px;
+            background: linear-gradient(90deg, #007bff, #0056b3);
             color: #fff;
-            position: fixed;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
             bottom: 0;
             width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .password-container input {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .password-container button {
+                width: 100%;
+            }
         }
     </style>
     <script>
@@ -126,7 +181,7 @@
         </div>
     </div>
     <footer>
-        &copy; 2024 Govt. HSS Shangus, Anantnag. All rights reserved.
+        <p>&copy; 2024 Govt. HSS Shangus, Anantnag. All rights reserved.</p>
     </footer>
 </body>
 </html>
