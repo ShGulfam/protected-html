@@ -15,12 +15,6 @@ Enter Password: Type the correct password in the provided field.
 Submit: Click the "Submit" button.
 Access Files: If the password is correct, you will be redirected to the corresponding file on Google Drive.
 Passwords
-The following passwords are currently in use:
-
-11th@24: Accesses 11th grade Sentup results.
-12th@24: Accesses 12th grade Sentup results.
-adm@21-25: Accesses Admission registers.
-Note: These passwords grant access to sensitive information. Ensure they are kept confidential and shared only with authorized individuals.
 
 Future Improvements
 Enhanced Security: Implement more robust password protection mechanisms, such as hashing or a more secure authentication system.
